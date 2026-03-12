@@ -1,0 +1,55 @@
+# ═══════════════════════════════════════════════════════════════
+# OmegaWallet — .gitignore (Hardened)
+# ═══════════════════════════════════════════════════════════════
+
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+
+# ── Environment / Secrets (CRITICAL) ─────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+rpc-config.json
+
+# ── Electron Build Artifacts ─────────────────────────────────
+dist-electron/
+electron/app/
+dist/
+out/
+*.exe
+*.msi
+*.dmg
+*.AppImage
+*.snap
+*.asar
+
+# ── Encrypted Vault Data ─────────────────────────────────────
+omega-vault.enc
+*.vault
+*.enc
+
+# ── OS Files ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── IDE ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Temp / Logs ──────────────────────────────────────────────
+*.log
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Coverage / Test ──────────────────────────────────────────
+coverage/
+.nyc_output/

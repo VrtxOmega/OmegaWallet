@@ -1,0 +1,61 @@
+{
+  "name": "omega-wallet",
+  "version": "5.0.0",
+  "private": true,
+  "description": "OmegaWallet — State-Grade IPC Cleanroom Electron Shell",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable",
+    "build:nsis": "electron-builder --win nsis"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "@walletconnect/sign-client": "^2.23.8",
+    "bip32": "^5.0.1",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^7.0.1",
+    "bs58": "^6.0.0",
+    "ed25519-hd-key": "^1.3.0",
+    "ethers": "^6.11.0",
+    "tiny-secp256k1": "^2.2.4",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.omega.wallet",
+    "productName": "OmegaWallet",
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "ipc-handlers.js",
+      "encrypted-ledger.js",
+      "fresh-auth.js",
+      "ipc-schema.js",
+      "ws-bridge.js",
+      "tokens.js",
+      "wc-bridge.js",
+      "dapp-preload.js",
+      "dapp-browser.js",
+      "chains/**/*",
+      "icon.ico",
+      "icon.png",
+      "app/**/*",
+      "package.json",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "output": "../dist-electron"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "omega-wallet-root",
+    "version": "5.0.0",
+    "private": true,
+    "description": "OmegaWallet — Root launcher (avoids electron module collision)",
+    "scripts": {
+        "start": "electron electron/main.js",
+        "build": "cd frontend && npm run build && xcopy /E /Y /I dist ..\\electron\\app"
+    },
+    "devDependencies": {
+        "electron": "^33.0.0"
+    }
+}

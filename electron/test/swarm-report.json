@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-03-12T12:47:30.262Z",
+  "elapsed_s": 14.92,
+  "summary": {
+    "total": 111,
+    "passed": 111,
+    "crashes": 0,
+    "stateIncon": 0,
+    "policyBypass": 0,
+    "unauthAction": 0,
+    "keyLeak": 0
+  },
+  "scorecard": {
+    "IPC Boundary": {
+      "pass": 32,
+      "fail": 0
+    },
+    "FreshAuth": {
+      "pass": 24,
+      "fail": 0
+    },
+    "Vault Integrity": {
+      "pass": 24,
+      "fail": 0
+    },
+    "Signing Truth": {
+      "pass": 40,
+      "fail": 0
+    },
+    "Recovery Path": {
+      "pass": 4,
+      "fail": 0
+    },
+    "Rate Limiting": {
+      "pass": 2,
+      "fail": 0
+    },
+    "State Consistency": {
+      "pass": 15,
+      "fail": 0
+    }
+  },
+  "failures": [],
+  "releaseReady": true
+}

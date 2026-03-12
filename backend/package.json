@@ -1,0 +1,22 @@
+{
+    "name": "omega-wallet-backend",
+    "version": "1.0.0",
+    "description": "OmegaWallet Backend — ERC-4337 Bundler, Cerberus Scanner, Tor Proxy, Transaction Simulator",
+    "main": "src/server.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node --watch src/server.js",
+        "start": "node src/server.js",
+        "test": "node --test src/**/*.test.js"
+    },
+    "dependencies": {
+        "ethers": "^6.11.0",
+        "express": "^4.18.2",
+        "cors": "^2.8.5",
+        "helmet": "^7.1.0",
+        "dotenv": "^16.4.1",
+        "socks-proxy-agent": "^8.0.2",
+        "winston": "^3.11.0",
+        "rate-limiter-flexible": "^5.0.3"
+    }
+}
