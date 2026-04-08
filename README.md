@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/VrtxOmega/Gravity-Omega/master/omega_icon.png" width="100" alt="VERITAS" />
   <h1>OMEGA WALLET</h1>
   <p><strong>Security-First Desktop Ethereum Wallet</strong></p>
   <p><em>Renderer cannot sign. That is the invariant.</em></p>
