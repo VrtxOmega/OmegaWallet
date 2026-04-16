@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in OmegaWallet, please report it responsibly.
 
-**Email:** [security contact — configure before public release]
+**GitHub Advisory:** Open a [private security advisory](https://github.com/VrtxOmega/OmegaWallet/security/advisories/new) in this repository. This is the preferred reporting channel.
 
 Please include:
 - Description of the vulnerability
