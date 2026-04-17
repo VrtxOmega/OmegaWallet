@@ -11,6 +11,13 @@
 
 ---
 
+<div align="center">
+  <img src="assets/dashboard.png" alt="Security-First Dashboard" width="800" />
+  <br/>
+  <sup><em>Security-First Dashboard &mdash; VERITAS gold-and-obsidian aesthetic</em></sup>
+</div>
+<br/>
+
 ## Ecosystem Canon
 
 OmegaWallet is the sovereign key-custody and transaction-execution layer of the **VERITAS Omega Universe** — a deterministic, operator-grade stack built for operators who will not compromise on trust boundaries. The wallet enforces a single, non-negotiable invariant: **the renderer process cannot sign**; all cryptographic operations are confined to the Electron main process, separated from the React UI by a validated, schema-enforced IPC bridge.
@@ -46,6 +53,36 @@ OmegaWallet ships alongside Cerberus (real-time contract risk analysis), a backe
 | Backend API | `backend/` | Express.js: ERC-4337 bundler proxy, RPC proxy, transaction simulator, Tor/Nym routing |
 | Smart Contracts | `src/` | Solidity 0.8.28 (Foundry): OmegaAccount (ERC-4337), modules, deploy scripts |
 | Deploy Scripts | `script/` | Foundry deployment and verification scripts |
+
+<br/>
+
+<div align="center">
+  <img src="assets/dapp.png" alt="Native dApp Browser" width="800" />
+  <br/>
+  <sup><em>Native dApp Browser with Phishing Shield &mdash; VERITAS gold-and-obsidian aesthetic</em></sup>
+</div>
+<br/>
+
+<div align="center">
+  <img src="assets/nft.png" alt="NFT Asset Gallery" width="800" />
+  <br/>
+  <sup><em>ERC-721/1155 NFT Asset Gallery &mdash; VERITAS gold-and-obsidian aesthetic</em></sup>
+</div>
+<br/>
+
+<div align="center">
+  <img src="assets/buy.png" alt="On-Ramp Provider Integration" width="800" />
+  <br/>
+  <sup><em>On-Ramp Provider Integration &mdash; VERITAS gold-and-obsidian aesthetic</em></sup>
+</div>
+<br/>
+
+<div align="center">
+  <img src="assets/settings.png" alt="Security Settings & Policy Guard" width="800" />
+  <br/>
+  <sup><em>Security Settings & Policy Guard &mdash; VERITAS gold-and-obsidian aesthetic</em></sup>
+</div>
+<br/>
 
 ---
 
