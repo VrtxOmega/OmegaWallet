@@ -1,0 +1,354 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-04-29T21:11:40.643Z",
+  "target": {
+    "name": "omega-wallet",
+    "repo": "/mnt/c/Veritas_Lab/OmegaWallet",
+    "commitHash": "3bfccceb26a7353882d56170ab8140bc7250f240",
+    "branch": "main"
+  },
+  "environment": {
+    "nodeVersion": "v22.14.0",
+    "os": "linux",
+    "arch": "x64",
+    "ci": false
+  },
+  "dependencies": [
+    {
+      "name": "@solana/web3.js",
+      "version": "1.98.4",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/@solana/web3.js",
+      "integrity": "33c7644404895707",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "@walletconnect/sign-client",
+      "version": "2.23.9",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/@walletconnect/sign-client",
+      "integrity": "c3089fbf148a0867",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "bip32",
+      "version": "5.0.1",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/bip32",
+      "integrity": "e800e832a8bc1d8a",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "bip39",
+      "version": "3.1.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/bip39",
+      "integrity": "41ccfd95d893a221",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "bitcoinjs-lib",
+      "version": "7.0.1",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/bitcoinjs-lib",
+      "integrity": "9e6869d6f20f86d7",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "bs58",
+      "version": "6.0.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/bs58",
+      "integrity": "b48a6f957d976838",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "ed25519-hd-key",
+      "version": "1.3.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/ed25519-hd-key",
+      "integrity": "1fbe4933c81c5b96",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "ethers",
+      "version": "6.16.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/ethers",
+      "integrity": "86117317a7713eb3",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "tiny-secp256k1",
+      "version": "2.2.4",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/tiny-secp256k1",
+      "integrity": "32028f4ea342f452",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "ws",
+      "version": "8.20.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/ws",
+      "integrity": "0e8b0104fec3e3b9",
+      "suspicious": false,
+      "riskScore": 0.1
+    },
+    {
+      "name": "electron",
+      "version": "33.0.0",
+      "resolved": "/mnt/c/Veritas_Lab/OmegaWallet/node_modules/electron",
+      "integrity": "aa6b28f3a59fa3a0",
+      "suspicious": false,
+      "riskScore": 0.1
+    }
+  ],
+  "gates": [
+    {
+      "gate": "GIT_INTEGRITY",
+      "status": "FAIL",
+      "evidence": "Modified files: 1237",
+      "durationMs": 6080
+    },
+    {
+      "gate": "LOCKFILE",
+      "status": "PASS",
+      "evidence": "package-lock.json present",
+      "durationMs": 1
+    },
+    {
+      "gate": "DETERMINISTIC_BUILD",
+      "status": "FAIL",
+      "evidence": "Build failed: /mnt/c/Veritas_Lab/OmegaWallet/frontend/node_modules/rollup/dist/native.js:115\n\t\tthrow new Error(\n\t\t      ^\n\nError: Cannot find module @rollup/rollup-linux-x64-gnu. npm has a bug related to optional d",
+      "durationMs": 549
+    },
+    {
+      "gate": "TEST_PASS",
+      "status": "FAIL",
+      "evidence": "Tests failed: npm error Missing script: \"test\"\nnpm error\nnpm error To see a list of scripts, run:\nnpm error   npm run\nnpm error A complete log of this run can be found in: /home/veritas/.npm/_logs/2026-04-29T21_11_",
+      "durationMs": 147
+    },
+    {
+      "gate": "LINT",
+      "status": "PASS",
+      "evidence": "npx passed",
+      "durationMs": 2485
+    }
+  ],
+  "adversarial": {
+    "totalPackages": 11,
+    "suspiciousPackages": 0,
+    "probes": [
+      {
+        "package": "@solana/web3.js",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "@solana/web3.js",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 1.98.4"
+      },
+      {
+        "package": "@solana/web3.js",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 33c7644404895707"
+      },
+      {
+        "package": "@walletconnect/sign-client",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "@walletconnect/sign-client",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 2.23.9"
+      },
+      {
+        "package": "@walletconnect/sign-client",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: c3089fbf148a0867"
+      },
+      {
+        "package": "bip32",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "bip32",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 5.0.1"
+      },
+      {
+        "package": "bip32",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: e800e832a8bc1d8a"
+      },
+      {
+        "package": "bip39",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "bip39",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 3.1.0"
+      },
+      {
+        "package": "bip39",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 41ccfd95d893a221"
+      },
+      {
+        "package": "bitcoinjs-lib",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "bitcoinjs-lib",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 7.0.1"
+      },
+      {
+        "package": "bitcoinjs-lib",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 9e6869d6f20f86d7"
+      },
+      {
+        "package": "bs58",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "bs58",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 6.0.0"
+      },
+      {
+        "package": "bs58",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: b48a6f957d976838"
+      },
+      {
+        "package": "ed25519-hd-key",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "ed25519-hd-key",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 1.3.0"
+      },
+      {
+        "package": "ed25519-hd-key",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 1fbe4933c81c5b96"
+      },
+      {
+        "package": "ethers",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "ethers",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 6.16.0"
+      },
+      {
+        "package": "ethers",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 86117317a7713eb3"
+      },
+      {
+        "package": "tiny-secp256k1",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "tiny-secp256k1",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 2.2.4"
+      },
+      {
+        "package": "tiny-secp256k1",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 32028f4ea342f452"
+      },
+      {
+        "package": "ws",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "ws",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 8.20.0"
+      },
+      {
+        "package": "ws",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: 0e8b0104fec3e3b9"
+      },
+      {
+        "package": "electron",
+        "probe": "TYPO_SQUATTING",
+        "result": "PASS",
+        "detail": "Name heuristic clean"
+      },
+      {
+        "package": "electron",
+        "probe": "VERSION_ANOMALY",
+        "result": "PASS",
+        "detail": "Pinned: 33.0.0"
+      },
+      {
+        "package": "electron",
+        "probe": "METADATA_INTEGRITY",
+        "result": "PASS",
+        "detail": "Hash: aa6b28f3a59fa3a0"
+      },
+      {
+        "package": "system",
+        "probe": "KIMI_REASONING",
+        "result": "INCONCLUSIVE",
+        "detail": "OLLAMA_CLOUD_API_KEY is not set. Skipping Kimi adversarial analysis."
+      }
+    ],
+    "overallRisk": 0
+  },
+  "seal": {
+    "chainHash": "249eaeec1e2e1531d3db245bf653a14e701c8b688c46043e1d5477657dc1b93b",
+    "sequence": 427
+  },
+  "signature": "7bf4aefc8071d8736eac0aa017cd47247f95c5c674f8ff0b5b363ea81920e241"
+}
