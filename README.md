@@ -306,6 +306,8 @@ OmegaWallet is one node in the **VERITAS & Sovereign Ecosystem**. Related reposi
 ---
 
 
+> 📖 Read the master narrative: [Why Sovereign AI?](https://github.com/VrtxOmega/veritas-portfolio/blob/main/content/SOVEREIGN_AI.md)
+
 ## 🌐 VERITAS Omega Ecosystem
 
 This project is part of the [VERITAS Omega Universe](https://github.com/VrtxOmega/veritas-portfolio) — a sovereign AI infrastructure stack.
